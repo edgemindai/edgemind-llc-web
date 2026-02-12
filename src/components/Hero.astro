@@ -1,0 +1,190 @@
+---
+---
+
+<section class="hero">
+  <div class="hero-bg">
+    <div class="grid-overlay"></div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+  </div>
+
+  <div class="container hero-content">
+    <div class="animate">
+      <span class="section-label">AI Consulting for Business</span>
+    </div>
+
+    <h1 class="animate animate-delay-1">
+      Transform your business<br />
+      with <span class="gradient-text">intelligent AI</span>
+    </h1>
+
+    <p class="hero-subtitle animate animate-delay-2">
+      We help traditional companies harness the power of artificial intelligence
+      to streamline operations, boost productivity, and unlock new growth —
+      without the complexity.
+    </p>
+
+    <div class="hero-actions animate animate-delay-3">
+      <a href="#contact" class="btn btn-primary">
+        Schedule a Consultation
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a href="#services" class="btn btn-secondary">Explore Services</a>
+    </div>
+
+    <div class="hero-stats animate animate-delay-4">
+      <div class="stat">
+        <span class="stat-number">10+</span>
+        <span class="stat-label">Projects Delivered</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-number">40%</span>
+        <span class="stat-label">Avg. Efficiency Gain</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Client Satisfaction</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 5rem;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .grid-overlay {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(99, 102, 241, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99, 102, 241, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.4;
+  }
+
+  .glow-1 {
+    width: 500px;
+    height: 500px;
+    background: var(--color-accent);
+    top: -100px;
+    right: -100px;
+    opacity: 0.12;
+  }
+
+  .glow-2 {
+    width: 400px;
+    height: 400px;
+    background: #a855f7;
+    bottom: -50px;
+    left: -100px;
+    opacity: 0.08;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, var(--color-accent-light), #a855f7, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 600px;
+    margin-top: 1.5rem;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-stats {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 4rem;
+    padding: 1.5rem 2.5rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--color-white);
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+  }
+
+  .stat-divider {
+    width: 1px;
+    height: 40px;
+    background: var(--color-border);
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding-top: 6rem;
+      min-height: auto;
+      padding-bottom: 3rem;
+    }
+
+    .hero-stats {
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 1.5rem;
+    }
+
+    .stat-divider {
+      width: 40px;
+      height: 1px;
+    }
+  }
+</style>

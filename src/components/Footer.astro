@@ -1,0 +1,131 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="logo">
+        <span class="logo-icon">E</span>
+        <span class="logo-text">EdgeMind</span>
+      </a>
+      <p>AI consulting for businesses that build real things.</p>
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#services">AI Strategy</a>
+        <a href="#services">Process Automation</a>
+        <a href="#services">Predictive Analytics</a>
+        <a href="#services">Custom Solutions</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <span>&copy; {year} EdgeMind LLC. All rights reserved.</span>
+  </div>
+</footer>
+
+<style>
+  footer {
+    border-top: 1px solid var(--color-border);
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  .footer-brand .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--color-white);
+    margin-bottom: 1rem;
+  }
+
+  .logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: var(--color-accent);
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: var(--color-white);
+  }
+
+  .footer-brand p {
+    font-size: 0.9rem;
+    max-width: 300px;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 4rem;
+    justify-content: flex-end;
+  }
+
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .footer-col h4 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-text);
+  }
+
+  .footer-col a {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    transition: var(--transition);
+  }
+
+  .footer-col a:hover {
+    color: var(--color-accent-light);
+  }
+
+  .footer-bottom {
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+  }
+
+  @media (max-width: 768px) {
+    .footer-inner {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    .footer-links {
+      justify-content: flex-start;
+      gap: 3rem;
+    }
+  }
+</style>

@@ -1,0 +1,151 @@
+---
+---
+
+<section id="about">
+  <div class="container about-grid">
+    <div class="about-visual">
+      <div class="about-card">
+        <div class="code-block">
+          <div class="code-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <pre><code><span class="kw">from</span> edgemind <span class="kw">import</span> AIStrategy
+
+<span class="comment"># Analyze your business</span>
+strategy = AIStrategy(
+    industry=<span class="str">"manufacturing"</span>,
+    goal=<span class="str">"reduce downtime"</span>,
+)
+
+<span class="comment"># Get actionable insights</span>
+plan = strategy.generate_roadmap()
+<span class="kw">print</span>(plan.estimated_roi)
+<span class="comment"># → "42% efficiency gain"</span></code></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-content">
+      <span class="section-label">About EdgeMind</span>
+      <h2>Bridging the gap between <br/>AI and business</h2>
+      <p>
+        EdgeMind LLC is a technology consulting firm focused on helping
+        traditional businesses — manufacturing, logistics, retail, healthcare,
+        and more — adopt AI in a way that's practical, measurable, and
+        sustainable.
+      </p>
+      <p>
+        We believe that AI shouldn't require a PhD to implement. Our approach
+        cuts through the jargon to deliver solutions that your team can
+        understand, use, and maintain. From first assessment to full deployment,
+        we're with you every step.
+      </p>
+
+      <div class="about-highlights">
+        <div class="highlight">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M10 1l2.39 4.84L18 6.71l-4 3.9.94 5.5L10 13.42l-4.94 2.69.94-5.5-4-3.9 5.61-.87L10 1z" fill="currentColor"/>
+          </svg>
+          <span>Industry-specific AI expertise</span>
+        </div>
+        <div class="highlight">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M10 1l2.39 4.84L18 6.71l-4 3.9.94 5.5L10 13.42l-4.94 2.69.94-5.5-4-3.9 5.61-.87L10 1z" fill="currentColor"/>
+          </svg>
+          <span>ROI-focused implementations</span>
+        </div>
+        <div class="highlight">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M10 1l2.39 4.84L18 6.71l-4 3.9.94 5.5L10 13.42l-4.94 2.69.94-5.5-4-3.9 5.61-.87L10 1z" fill="currentColor"/>
+          </svg>
+          <span>Ongoing support & optimization</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .about-content p {
+    margin-top: 1rem;
+    font-size: 1.05rem;
+  }
+
+  .about-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  .code-block {
+    padding: 1.5rem;
+  }
+
+  .code-dots {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 1.25rem;
+  }
+
+  .code-dots span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--color-border);
+  }
+
+  .code-dots span:first-child { background: #ef4444; }
+  .code-dots span:nth-child(2) { background: #eab308; }
+  .code-dots span:nth-child(3) { background: #22c55e; }
+
+  pre {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    line-height: 1.8;
+    color: var(--color-text-muted);
+  }
+
+  .kw { color: var(--color-accent-light); }
+  .str { color: #22c55e; }
+  .comment { color: #555570; }
+
+  .about-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 2rem;
+  }
+
+  .highlight {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--color-text);
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+
+  .highlight svg {
+    color: var(--color-accent-light);
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 768px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    .about-visual {
+      order: 2;
+    }
+  }
+</style>
